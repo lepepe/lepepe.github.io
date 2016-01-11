@@ -1,0 +1,19 @@
+<footer class="footer module-overlay-dark-3" data-background="{{ "assets/images/module-5.jpg" | prepend: site.url }}">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="social-icons text-center m-b-40">
+					{% include icon-github.html username=site.github_username %}
+					{% include icon-twitter.html username=site.twitter_username %}
+					{% include icon-facebook.html username=site.facebook_username %}
+					{% include icon-instagram.html username=site.instagram_username %}
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<div class="copyright text-center">
+					© {{ site.time | date: '%Y' }} <a href="#">Jose Perez Prol</a>, All Rights Reserved.
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>

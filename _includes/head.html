@@ -1,0 +1,33 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="{{ "/assets/images/favicon.png" | prepend: site.baseurl }}">
+	<link rel="apple-touch-icon" href="{{ "/assets/images/apple-touch-icon.png" | prepend: site.baseurl }}">
+	<link rel="apple-touch-icon" sizes="72x72" href="{{ "/assets/images/apple-touch-icon-72x72.png" | prepend: site.baseurl }}">
+	<link rel="apple-touch-icon" sizes="114x114" href="{{ "/assets/images/apple-touch-icon-114x114.png" | prepend: site.baseurl }}">
+	<!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,400italic,700' rel='stylesheet' type='text/css'>
+	<!-- Bootstrap core CSS -->
+	<link href="{{ "/assets/bootstrap/css/bootstrap.min.css"| prepend: site.baseurl }}" rel="stylesheet">
+	<!-- Plugins -->
+	<link href="{{ "/assets/css/font-awesome.min.css" | prepend: site.baseurl }}" rel="stylesheet">
+	<link href="{{ "/assets/css/stroke-gap-icons.css" | prepend: site.baseurl }}" rel="stylesheet">
+	<link href="{{ "/assets/css/simpletextrotator.css" | prepend: site.baseurl }}" rel="stylesheet">
+	<link href="{{ "/assets/css/magnific-popup.css" | prepend: site.baseurl }}" rel="stylesheet">
+	<link href="{{ "/assets/css/owl.carousel.css" | prepend: site.baseurl }}" rel="stylesheet">
+	<link href="{{ "/assets/css/superslides.css" | prepend: site.baseurl }}" rel="stylesheet">
+	<link href="{{ "/assets/css/vertical.min.css" | prepend: site.baseurl }}" rel="stylesheet">
+	<link href="{{ "/assets/css/animate.css" | prepend: site.baseurl }}" rel="stylesheet">
+	<!-- Template core CSS -->
+	<link href="{{ "/assets/css/style.css" | prepend: site.baseurl }}"  rel="stylesheet">
+
+</head>

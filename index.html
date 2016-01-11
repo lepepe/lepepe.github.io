@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<section id="hero" class="module-hero module-parallax module-overlay-dark-5 js-fullheight" data-background="{{ "/assets/images/home.jpg" }}">
+  <div class="hero-caption">
+    <div class="hero-text">
+      <h1 class="home-hero-title m-t-70">Hi there!</h1>
+      <p class="home-lead m-t-40 m-b-60">I am glad you made it to my personal page. You can enjoy a quick tour through it or<br> leave me a quick note. Either way… thank you for coming!</p>
+      <a href="" class="btn btn-round btn-dark">Scroll down</a>
+    </div>
+  </div>
+</section>
+
+{% include about.html %}
+
+{% include resume.html %}
+
+<section id="counters" class="module module-overlay-dark-5" data-background="{{ "/assets/images/blog.jpg" }}" style="background-image: url(&quot;{{ "/assets/images/blog.jpg" }}&quot;);">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="counter-content text-center">
+          <div class="counter-icon">
+            <span class="icon  icon-Drop"></span>
+          </div>
+					<h2><i class="fa fa-quote-left"></i> You are not a drop in the ocean.<br>You are the entire ocean in a drop. <i class="fa fa-quote-right"></i></h2>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% include steps.html %}
+
+{% include companies.html %}

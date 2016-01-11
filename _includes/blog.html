@@ -1,0 +1,52 @@
+<section id="hero" class="module-hero module-parallax module-overlay-dark-5" data-background="{{ "/assets/images/blog.jpg" }}">
+  <div class="hero-caption">
+    <div class="hero-text">
+      <h1 class="hero-title m-t-70">Welcome to my Blog</h1>
+      <p class="home-lead m-t-40">Where I share my own compilation of topics about Ruby on Rails, <br>Linux containers, virtual development environments and sysadmin.</p>
+    </div>
+  </div>
+</section>
+
+<section class="module module-w">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-4">
+        {% for post in site.posts %}
+          <article class="post">
+            <div class="post-header">
+              <div class="post-meta">
+                {{ post.date | date: "%b %-d, %Y" }}
+              </div>
+              <h2 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+            </div>
+            <div class="post-content">
+              <p>{{ post.content | strip_html | truncatewords:25}}</p>
+              <a href="{{ post.url | prepend: site.baseurl }}">Read more &rarr;</a>
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS <i class="fa fa-rss"></i></a></p>
+      </div>
+    </div>
+  </div>
+
+  <!--
+  <nav class="page-navigation text-center m-t-70 m-b-0" role="navigation">
+    <ul class="pagination">
+      <li><span class="page-numbers current">1</span></li>
+      <li><a class="page-numbers" href="#">2</a></li>
+      <li><a class="page-numbers" href="#">3</a></li>
+      <li><a class="page-numbers" href="#">4</a></li>
+      <li><a class="next page-numbers" href="#">&rarr;</a></li>
+    </ul>
+  </nav>
+  -->
+
+  </div>
+</section>
