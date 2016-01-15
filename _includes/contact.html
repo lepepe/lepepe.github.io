@@ -3,19 +3,24 @@
     <div class="row">
 
       <div class="col-sm-6 wow fadeInUp">
-        <form action="https://lepepe-contact-form.herokuapp.com/send" class="m-b-sm-70" novalidate="">
+        <form action="https://lepepe-contact-form.herokuapp.com/send" id="contact-form" class="m-b-sm-70" novalidate="" method="POST">
           <div class="form-group">
             <label class="sr-only" for="cname">Name</label>
-            <input type="text" name="name" class="form-control" placeholder="Name" required>
+            <input type="text" name="name" class="form-control" placeholder="Name" required="" data-validation-required-message="Please enter your name.">
             <p class="help-block text-danger"></p>
           </div>
           <div class="form-group">
             <label class="sr-only" for="cemail">Your Email</label>
-            <input type="email" name="email" class="form-control" placeholder="Your E-mail" required>
+            <input type="email" name="email" class="form-control" placeholder="Your E-mail" required="" data-validation-required-message="Please enter your email address.">
             <p class="help-block text-danger"></p>
           </div>
           <div class="form-group">
-            <textarea class="form-control" name="message" rows="7" placeholder="Message" required></textarea>
+            <label class="sr-only" for="subject">Subject</label>
+            <input type="text" name="subject" class="form-control" placeholder="Subject" required="" data-validation-required-message="Please enter your subject.">
+            <p class="help-block text-danger"></p>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="message" rows="7" placeholder="Message" required="" data-validation-required-message="Please enter your message."></textarea>
             <p class="help-block text-danger"></p>
           </div>
           <div class="text-center">
