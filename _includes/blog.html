@@ -11,8 +11,8 @@
   <div class="container">
 
     <div class="row">
-      <div class="col-sm-4">
-        {% for post in site.posts %}
+      {% for post in site.posts %}
+        <div class="col-sm-4">
           <article class="post">
             <div class="post-header">
               <div class="post-meta">
@@ -25,8 +25,8 @@
               <a href="{{ post.url | prepend: site.baseurl }}">Read more &rarr;</a>
             </div>
           </article>
-        {% endfor %}
-      </div>
+        </div>
+      {% endfor %}
     </div>
 
     <div class="row">
