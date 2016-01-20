@@ -3,7 +3,9 @@ layout: post
 title:  "Google Authentication with Devise in Rails Application"
 date:   2016-01-10 16:43:14 -0500
 comments: true
+#image: /assets/images/posts/google-logo.png
 categories: ruby-on-rails
+tags: [ruby-on-rails, omniauth, google]
 ---
 
 In this post I'll explain how to integrate google omniauth with Devise in Rails.
@@ -106,7 +108,3 @@ def self.find_for_google_oauth2(access_token, signed_in_resource=nil)
    end
 end
 {% endhighlight %}
-
-{% if page.comments %}
-  {% include comments.html %}
-{% endif %}
