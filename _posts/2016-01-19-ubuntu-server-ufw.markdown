@@ -8,14 +8,14 @@ categories: sysadmin
 tags: [ubuntu, firewall, ufw]
 ---
 
-UFW is the default firewall configuration tool for ubutnu. It was developed to ease iptables configuration.
-By default the ufw is disabled, so the first thing we need to do is enable:
+UFW is the default firewall configuration tool for Ubuntu. It was developed to ease iptables configuration.
+By default the ufw is disabled, so the first thing we need to do is to enable it:
 
 {% highlight ruby %}
 $ sudo ufw enable
 {% endhighlight %}
 
-###### Then we can starting adding rules and open ports
+###### Then we can start adding rules and opening ports
 {% highlight ruby %}
 # SSH
 $ sudo ufw allow 22
@@ -32,14 +32,14 @@ $ sudo ufw deny 22
 $ sudo ufw delete deny 22
 {% endhighlight %}
 
-###### After opening some ports and add rules we can check the ufw's status
+###### After opening some ports and adding rules we can check the ufw's status
 {% highlight ruby %}
 $ sudo ufw status
 {% endhighlight %}
 
 More details: [Ubutnu Server Guide](https://help.ubuntu.com/lts/serverguide/firewall.html#firewall-ufw)
 
-The purpose of this post is configure UFW to prevent flood traffic or DoS.
+The purpose of this post is to configure UFW to prevent flood traffic or DoS.
 The easy way to configure our firewall is modifying the rules with a text editor:
 {% highlight ruby %}
 sudo vim /etc/ufw/before.rules
@@ -91,7 +91,7 @@ EX:
 With the above rules we are limiting the connections per IP at 20 connections / 10 seconds / IP and
 the packets to 20 packets / second / IP.
 
-Finally we have to reload our firewall
+Finally we need to reload our firewall
 {% highlight ruby %}
 sudo ufw reload
 {% endhighlight %}
