@@ -1,0 +1,35 @@
+<section id="portfolio" class="module module-w p-b-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2 wow fadeInUp">
+        <h2 class="module-title">Creative Portfolio Showcase</h2>
+        <h3 class="module-subtitle">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of decided to leave.</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="works-grid-wrapper">
+    <div id="works-grid" class="works-grid works-grid-gutter works-grid-dark">
+      {% for portfolio in site.portfolio %}
+      <article class="work-item {{ portfolio.categories }}">
+        <div class="work-wrapper">
+          {% for image in site.static_files %}
+            {% if image.extname == ".jpg" and image.path contains portfolio.slug %}
+              {% if image.path contains 'thumbnail' %}
+                <div class="work-thumbnail">
+                  <img src="{{ site.baseurl }}{{ image.path }}" alt="{{ portfolio.title }}" />
+                </div>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+          <div class="work-caption">
+            <h3 class="work-title">{{ portfolio.title }}</h3>
+          </div>
+          <a href="{{ portfolio.url | prepend: site.baseurl }}" class="work-link"></a>
+          <a class="work-popup video-popup" href="{{ portfolio.url | prepend: site.baseurl }}"><i class="fa fa-expand"></i></a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
