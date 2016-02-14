@@ -16,7 +16,7 @@ $ sudo apt-get install unixodbc unixodbc-dev freetds-dev tdsodbc
   $ sudo vim /etc/freetds/freetds.conf
 
   [SERVER]
-    host = serve ip address
+    host = server ip address
     port = 1433
     tds version = 7.0
     # client charset = UTF-8 (optional)
