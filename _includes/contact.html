@@ -1,3 +1,53 @@
+<script>
+function showRecaptcha(element) {
+  Recaptcha.create('6LebbAcUAAAAAGAqR1LlD4TzvtEBIsD8Vgy8z1ir', element, {
+    theme: 'custom', // you can pick another at https://developers.google.com/recaptcha/docs/customization
+    custom_theme_widget: 'recaptcha_widget'
+  });
+}
+
+function setupRecaptcha() {
+  var contactFormHost = 'https://lepepe-contact-form.herokuapp.com/',
+      form = $('#contact-form'),
+      notice = form.find('#notice');
+
+  if (form.length) {
+    showRecaptcha('recaptcha_widget');
+
+    form.submit(function(ev){
+      ev.preventDefault();
+
+      $.ajax({
+        type: 'POST',
+        url: contactFormHost + 'send_email',
+        data: form.serialize(),
+        dataType: 'json',
+        success: function(response) {
+          switch (response.message) {
+            case 'success':
+              form.fadeOut(function() {
+                form.html('<h4>' + form.data('success') + '</h4>').fadeIn();
+              });
+              break;
+
+            case 'failure_captcha':
+              showRecaptcha('recaptcha_widget');
+              notice.text(notice.data('captcha-failed')).fadeIn();
+              break;
+
+            case 'failure_email':
+              notice.text(notice.data('error')).fadeIn();
+          }
+        },
+        error: function(xhr, ajaxOptions, thrownError) {
+          notice.text(notice.data('error')).fadeIn();
+        }
+      });
+    });
+  }
+}
+</script>
+
 <section id="contact" class="module module-w">
   <div class="container">
 
@@ -9,7 +59,7 @@
 
     <div class="row">
       <div class="col-sm-6 wow fadeInUp">
-        <form action="https://lepepe-contact-form.herokuapp.com/send" class="m-b-sm-70" novalidate="" method="POST">
+        <form id="contact-form" class="m-b-sm-70" novalidate="" method="POST">
           <div class="form-group">
             <label class="sr-only" for="cname">Name</label>
             <input type="text" name="name" class="form-control" placeholder="Name" required="" data-validation-required-message="Please enter your name.">
@@ -29,6 +79,9 @@
             <textarea class="form-control" name="message" rows="7" placeholder="Message" required="" data-validation-required-message="Please enter your message."></textarea>
             <p class="help-block text-danger"></p>
           </div>
+
+					<div class="g-recaptcha" data-sitekey="6LebbAcUAAAAAGAqR1LlD4TzvtEBIsD8Vgy8z1ir"></div>
+
           <div class="text-center">
             <input type="submit" value="Submit" class="btn btn-block btn-round btn-dark">
           </div>
