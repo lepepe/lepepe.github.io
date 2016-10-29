@@ -470,7 +470,7 @@ p.copyright {
 */
 
 .navbar-custom {
-	background: #111;
+	background: #38495F;
 	border: 0;
 	padding: 0;
 	margin: 0;
@@ -496,7 +496,7 @@ p.copyright {
 .navbar-custom,
 .navbar-custom a {
 	font-size: 15px;
-	color: #8c8c8c;
+	color: #fff;
 }
 
 .navbar-custom .nav > li > a:focus {
@@ -726,7 +726,7 @@ p.copyright {
 }
 
 .footer {
-	background-color: #111;
+	background-color: #38495F;
 	position: fixed;
 	left: 0;
 	right: 0;

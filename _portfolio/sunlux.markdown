@@ -16,4 +16,4 @@ Digital Ocean<br>
 Mandrill
 
 ### Status
-Live: [http://sunlluxcollection.com](http://sunlluxcollection.com)
+Live: [http://sunluxcollection.com](http://sunluxcollection.com)
