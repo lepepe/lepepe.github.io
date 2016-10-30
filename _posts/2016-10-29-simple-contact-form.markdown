@@ -6,7 +6,7 @@ comments: true
 categories: ruby
 tags: [ruby, jekyll, static sites]
 ---
-### Requiered:   
+### Required:   
 1. Clone this repository `$ git clone git@github.com:lepepe/simple-contact-form.git`.   
 2. Create a [Heroku](http://heroku.com) account.   
 3. Install the heroku command line interface [Heroku CLI](https://devcenter.heroku.com/articles/heroku-command-line).   
