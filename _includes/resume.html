@@ -9,19 +9,12 @@
 					</div>
 					<h3 class="profile-title">Experience</h3>
 					<hr class="divider divider-gross m-b-30">
-					<div class="profile-content">
-						<h6>Database Develoepr</h6>
-						<p>WebstauranStore</p>
-					</div>
-					<div class="profile-content">
-						<h6>Web Developer & Sysadmin</h6>
-						<p>Vertilux, Ltd.</p>
-					</div>
-					<div class="profile-content">
-						<h6>Co-Founder/Developer</h6>
-						<p>
-							@ Roast n' Roll
-					</div>
+					{% for item in site.data.experience %}
+						<div class="profile-content">
+							<h6>{{item.title}}</h6>
+							<p>{{item.company}}</p>
+						</div>
+					{% endfor %}
 				</div>
 			</div>
 
@@ -33,21 +26,11 @@
 					<h3 class="profile-title">Tools</h3>
 					<hr class="divider divider-gross m-b-30">
 
-					<div class="profile-content">
-						<h6>MacBook Air 13" + Mac Mini 2012</h6>
-					</div>
-					<div class="profile-content">
-						<h6>2 Dell S2440 Displays</h6>
-					</div>
-					<div class="profile-content">
-						<h6>HP Proliant Server DL360 G5</h6>
-					</div>
-					<div class="profile-content">
-						<h6>MacVim, iTerm, Atom, Docker</h6>
-					</div>
-					<div class="profile-content">
-						<h6>Arch, Debian/Ubuntu</h6>
-					</div>
+					{% for item in site.data.tools %}
+						<div class="profile-content">
+							<h6>{{item.name}}</h6>
+						</div>
+					{% endfor %}
 				</div>
 			</div>
 
@@ -59,44 +42,18 @@
 					<h3 class="profile-title">Skills</h3>
 					<hr class="divider divider-gross m-b-30">
 
-					<h6 class="progress-title">SQL</h6>
-					<div class="progress">
-						<div class="progress-bar progress-bar-def" aria-valuenow="70" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-							<span><span class="progress-value">90</span>%</span>
+					{% for item in site.data.skills %}
+						<h6 class="progress-title">{{item.name}}</h6>
+						<div class="progress">
+							<div class="progress-bar progress-bar-def" aria-valuenow="{{item.width}}" role="progressbar" aria-valuemin="0" aria-valuemax="100" {{item.style}}>
+								<span><span class="progress-value">{{item.width}}</span>%</span>
+							</div>
 						</div>
-					</div>
+					{% endfor %}
 
-					<h6 class="progress-title">Ruby on Rails</h6>
-					<div class="progress">
-						<div class="progress-bar progress-bar-def" aria-valuenow="95" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-							<span><span class="progress-value">90</span>%</span>
-						</div>
-					</div>
-
-					<h6 class="progress-title">Python</h6>
-					<div class="progress">
-						<div class="progress-bar progress-bar-def" aria-valuenow="85" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-							<span><span class="progress-value">80</span>%</span>
-						</div>
-					</div>
-
-					<h6 class="progress-title">Git</h6>
-					<div class="progress">
-						<div class="progress-bar progress-bar-def" aria-valuenow="85" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
-							<span><span class="progress-value">85</span>%</span>
-						</div>
-					</div>
-
-					<h6 class="progress-title">UNIX/Linux</h6>
-					<div class="progress">
-						<div class="progress-bar progress-bar-def" aria-valuenow="90" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
-							<span><span class="progress-value">75</span>%</span>
-						</div>
-					</div>
 				</div>
 			</div>
 
 		</div>
-
 	</div>
 </section>

@@ -21,13 +21,21 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://lepepe.github.io/" # the base hostname & protocol for your site
 
 # Social media
-facebook_username: jose.perezprol
 twitter_username: hernani84
 github_username: lepepe
 instagram_username: hernani84
 
 # Build settings
 markdown: kramdown
+
+jekyll_admin:
+  hidden_links:
+    #- posts
+    #- pages
+    #- staticfiles
+    #- datafiles
+    #- configuration
+  homepage: "pages"
 
 # Portfolio
 collections:
