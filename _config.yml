@@ -10,10 +10,13 @@ title: Jose Perez Prol (a.k.a. Le Pepe)
 email: hernani84@gmail.com
 phone: (305) 833-8445
 description: > # this means to ignore newlines until "baseurl:"
-  I enjoy building web applications mostly with Ruby on Rails & playing with my cat.
-  I'm a coffee & craft beer lover. Mad about Linux and System Admnistration.
-  Currently working towards the Linux Foundation System Administrator Certification, SQL:
-  Analyzing Business Metrics and Linux Containers using Docker.
+  Passionate about crafting web applications and APIs, my expertise lies primarily in utilizing Ruby on Rails and Flask
+  to bring innovative digital solutions to life.
+
+  When I'm not immersed in code, you can find me savoring the perfect cup of coffee or exploring the world of craft beer.
+  My love for technology extends to my deep enthusiasm for Linux, DevOps practices, and the intricacies of SQL.
+
+  I proudly hold the certification of a Linux Admin, awarded by the esteemed Foundation System Administrator Certification.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://lepepe.github.io/" # the base hostname & protocol for your site
 
