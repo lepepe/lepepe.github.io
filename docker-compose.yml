@@ -1,7 +1,9 @@
-blog:
-    image: jekyll/jekyll:pages
-    command: jekyll serve --watch --incremental
+version: "3.8"
+
+services:
+  blog:
+    build: .
     ports:
-        - 4000:4000
+      - "4000:4000"
     volumes:
-        - .:/srv/jekyll
+      - .:/srv/jekyll

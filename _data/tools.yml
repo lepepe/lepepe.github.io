@@ -1,5 +1,5 @@
 - name: Neovim, emacs, VS Code
-- name: Azure Data Studio
+- name: Apache Airflow, Qlik Replicate
 - name: Postman
-- name: Github and Azure DevOps
+- name: Github, Azure DevOps
 - name: Docker, Arch, Debian/Ubuntu
