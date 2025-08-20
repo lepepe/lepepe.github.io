@@ -10,13 +10,16 @@ title: Jose Perez Prol (a.k.a. Le Pepe)
 email: hernani84@gmail.com
 phone: (305) 833-8445
 description: > # this means to ignore newlines until "baseurl:"
-  Passionate about crafting web applications and APIs, my expertise lies primarily in utilizing Ruby on Rails and Flask
-  to bring innovative digital solutions to life.
+  Passionate about crafting robust web applications and APIs, I specialize in building solutions with Ruby on Rails,
+  Flask, and FastAPI. My journey in technology has expanded into the world of data engineering, where I leverage tools
+  like Qlik Replicate and orchestrate workflows with Apache Airflow. I'm currently diving deep into Apache Spark to
+  enhance my data processing capabilities.
 
-  When I'm not immersed in code, you can find me savoring the perfect cup of coffee or exploring the world of craft beer.
-  My love for technology extends to my deep enthusiasm for Linux, DevOps practices, and the intricacies of SQL.
+  Beyond the keyboard, my passions extend to the great outdoors. You can find me cooking, exploring the world of craft
+  beer, riding my bikes (road and MTB), kayaking, or hiking. These pursuits, much like my work, are driven by a love
+  for exploration and a hands-on approach to new challenges. I'm also a certified Linux Admin with a strong focus on
+  DevOps practices and SQL.
 
-  I proudly hold the certification of a Linux Admin, awarded by the esteemed Foundation System Administrator Certification.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://lepepe.github.io/" # the base hostname & protocol for your site
 
