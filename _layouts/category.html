@@ -6,6 +6,9 @@ layout: default
 
 {% assign category_name = page.title | downcase %}
 
+<p>Category name is "{{ category_name }}"</p>
+<p>Available categories: {{ site.categories | inspect }}</p>
+
 {% if site.categories[category_name] %}
   <p>Found {{ site.categories[category_name].size }} posts in this category:</p>
 
@@ -19,4 +22,5 @@ layout: default
   </ul>
 {% else %}
   <p>No posts found in category "{{ category_name }}"</p>
+  <p>Available categories: {% for cat in site.categories %}{{ cat[0] }} ({{ cat[1].size }} posts), {% endfor %}</p>
 {% endif %}
