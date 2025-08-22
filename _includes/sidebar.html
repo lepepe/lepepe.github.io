@@ -1,0 +1,11 @@
+<aside class="sidebar">
+  <h3>Categories</h3>
+  <ul>
+    {% for category in site.categories %}
+      <li>
+        <a href="/category/{{ category[0] }}">{{ category[0] | capitalize }}</a>
+        <span>({{ category[1].size }})</span>
+      </li>
+    {% endfor %}
+  </ul>
+</aside>
