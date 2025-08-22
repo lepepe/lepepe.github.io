@@ -3,7 +3,7 @@ layout: post
 title:  "Simple Contact form for Static Sites"
 date:   2016-10-29 10:40:00 -0500
 comments: true
-categories: ruby
+categories: [tech, ruby]
 tags: [ruby, jekyll, static sites]
 ---
 ### Required:   

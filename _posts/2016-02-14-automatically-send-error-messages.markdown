@@ -4,7 +4,7 @@ title:  "Automatically Send Error Messages in Rails Application"
 date:   2016-02-14 10:43:14 -0500
 comments: true
 #image: /assets/images/posts/google-logo.png
-categories: rails
+categories: [tech, rails]
 tags: [rails, logs, messages]
 ---
 

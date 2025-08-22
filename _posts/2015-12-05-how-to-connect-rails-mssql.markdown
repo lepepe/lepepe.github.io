@@ -3,7 +3,7 @@ layout: post
 title:  "How to Connect a Rails Application with MSSQL"
 date:   2015-12-05 16:43:14 -0500
 comments: true
-categories: ruby-on-rails
+categories: [tech, rails]
 tags: [ruby-on-rails, mssql, databases]
 ---
 First, we need to have installed unixodbc and freetds in our Linux server, in this case Ubuntu 14.04:
