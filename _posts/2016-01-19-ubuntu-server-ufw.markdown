@@ -4,7 +4,7 @@ title:  "Protect Ubuntu Server Against DOS Attacks with UFW"
 date:   2016-01-19 16:43:14 -0500
 comments: true
 #image: /assets/images/posts/google-logo.png
-categories: [tech, ubuntu]
+categories: [tech]
 tags: [ubuntu, firewall, ufw]
 ---
 

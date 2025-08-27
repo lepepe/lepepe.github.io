@@ -4,7 +4,7 @@ title:  "Google Authentication with Devise in Rails Application"
 date:   2016-01-10 16:43:14 -0500
 comments: true
 #image: /assets/images/posts/google-logo.png
-categories: [tech, rails]
+categories: [tech]
 tags: [ruby-on-rails, omniauth, google]
 ---
 
