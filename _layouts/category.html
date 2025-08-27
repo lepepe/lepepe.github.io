@@ -49,4 +49,5 @@ layout: default
 </section>
 {% else %}
   <p>No posts found in category "{{ category_name }}"</p>
+  <p>Available categories: {% for cat in site.categories %}{{ cat[0] }} ({{ cat[1].size }} posts), {% endfor %}</p>
 {% endif %}

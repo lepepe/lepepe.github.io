@@ -31,6 +31,17 @@ instagram_username: hernani84
 # Build settings
 markdown: kramdown
 
+plugins:
+  - jekyll-archives
+
+jekyll-archives:
+  enabled:
+    - categories
+  layouts:
+    category: category
+  permalinks:
+    category: '/category/:name/'
+
 jekyll_admin:
   hidden_links:
     #- posts
