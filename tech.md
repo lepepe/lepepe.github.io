@@ -1,7 +1,9 @@
 ---
 layout: category
-title: tech
+title: Tech
 permalink: /category/tech/
+image: /assets/images/tech.png
 ---
 
-This page shows all posts in the **Tech** category.
+A Blog on Ruby on Rails, Python, Linux, DevOps, SQL Server and More.<br>
+Where Technology Meets Craft Beer and Coffee.
