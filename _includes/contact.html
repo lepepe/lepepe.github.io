@@ -8,7 +8,7 @@
     </div>
 
     <div class="row">
-      <div class="col-sm-6 wow fadeInUp">
+      <div class="col-sm-12 wow fadeInUp">
         <form action="https://lepepe-contact-form.herokuapp.com/send_email" class="m-b-sm-70" method="POST">
           <div class="form-group">
             <label class="sr-only" for="cname">Name</label>
@@ -29,11 +29,6 @@
             <input type="submit" value="Submit" class="btn btn-round btn-def btn-block">
           </div>
         </form>
-      </div>
-
-      <div class="col-sm-6 wow fadeInUp">
-        <h5>{{ site.title }}</h5>
-        <p>{{ site.description }}</p>
         <ul class="list-unstyled">
           <li><abbr title="Phone">P:</abbr> {{ site.phone }}</li>
           <li>E-mail: <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
