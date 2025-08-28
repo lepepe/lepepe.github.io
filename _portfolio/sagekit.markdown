@@ -3,6 +3,7 @@ layout: portfolio
 title:  "sagekit"
 slug: sagekit
 categories: web
+hide: false
 ---
 
 ### Description

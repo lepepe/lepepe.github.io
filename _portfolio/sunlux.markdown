@@ -3,6 +3,7 @@ layout: portfolio
 title:  "Sunlux Collection"
 slug: sunlux
 categories: web
+hide: true
 ---
 
 ### Description

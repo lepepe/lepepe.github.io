@@ -3,6 +3,7 @@ layout: portfolio
 title: "RD & YD Associates, Inc."
 slug: rdyd
 categories: web
+hide: true
 ---
 
 ### Description

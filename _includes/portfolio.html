@@ -13,6 +13,7 @@
   <div class="works-grid-wrapper">
     <div id="works-grid" class="works-grid works-grid-gutter works-grid-dark">
       {% for portfolio in site.portfolio %}
+      {% unless portfolio.hide %}
       <article class="work-item {{ portfolio.categories }}">
         <div class="work-wrapper">
           {% for image in site.static_files %}
@@ -31,6 +32,7 @@
           <a class="work-popup video-popup" href="{{ portfolio.url | prepend: site.baseurl }}"><i class="fa fa-expand"></i></a>
         </div>
       </article>
+      {% endunless %}
       {% endfor %}
     </div>
   </div>
