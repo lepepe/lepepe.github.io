@@ -1,7 +1,7 @@
 ---
 title: Montana & Wyoming Vacation - Our Yellowstone and Grand Teton Family Adventure
 layout: post
-date: '2016-10-29 10:40:00 -0500'
+date: '2025-08-29 10:40:00 -0500'
 comments: true
 categories:
 - trips
