@@ -3,7 +3,7 @@ FROM jekyll/jekyll:pages
 WORKDIR /srv/jekyll
 
 # Install build dependencies for native Ruby gems
-RUN apk add --no-cache build-base
+RUN apt-get update && apt-get install -y --no-install-recommends build-essential
 COPY Gemfile ./
 RUN bundle install
 COPY . .
